@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Space Invaders</title>
+		<link rel="stylesheet" href="depen/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div class="container-fluid" style="text-align: center">
+			<h1 class="text-center">Space Invaders <span id="fps"></span></h1>
+			<h5 class="text-center" id="status">Level 1 <br> (Score: 0)</h5> <br>
+			<canvas id="app" width="800" height="600"></div>
+			
+			<h3 class="text-center">
+				<button type="button" class="btn btn-warning" id="resetGame">New Game</button>
+			</h3>
+			<h3 class="text-center">
+				<button type="button" class="btn btn-primary button_fps button_fps_30" disabled onclick="setFPS(30);">30 FPS</button>
+				<button type="button" class="btn btn-danger button_fps button_fps_45" onclick="setFPS(45);">45 FPS</button>
+			</h3>
+			
+		</div>
+
+		<script src="depen/jquery.js"></script>
+		<script src="depen/bootstrap.min.js"></script>
+ 		<script src="objects/player.js"></script>
+ 		<script src="objects/invader.js"></script>
+ 		<script src="objects/bullet_player.js"></script>
+ 		<script src="objects/bullet_invader.js"></script>
+ 		<script src="app.js"></script>
+	</body>
+</html>
