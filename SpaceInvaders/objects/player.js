@@ -9,8 +9,6 @@ class Player {
 		this.y = maxY - 5
 		this.vx = 0
 		this.vy = 0
-
-		console.log(this)
     }
 
     shoot() {
